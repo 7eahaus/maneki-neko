@@ -12,7 +12,7 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   /* Blockquotes */
   --blockquote-border-thickness: 2px;
-  --blockquote-border-color: rgb(var(--mn-accent));
+  --blockquote-border-color: rgb(var(--mn-peak));
   --blockquote-font-style: normal;
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;
@@ -95,7 +95,7 @@ body {
   --dialog-max-height: 85vh;
   /* Dividers â€” between panes */
   --divider-color: var(--background-modifier-border);
-  --divider-color-hover: var(--interactive-accent);
+  --divider-color-hover: var(--mn-peak);
   --divider-width: 1px;
   --divider-width-hover: 2px;
   --divider-vertical-height: calc(100% - var(--header-height));
@@ -1300,6 +1300,39 @@ rainbow color names based on meanings of colored maneki-neko in Japanese culture
 	--mn-sky: #71baf6;
 	--mn-lavender: #b59ede;
 	--mn-rose: #f4b5e3;
+	/* RGB */
+	--mn-protection-rgb: 192, 77, 53;
+	--mn-prosperity-rgb: 203, 148, 7;
+	--mn-success-rgb: 253, 198, 35;
+	--mn-safety-rgb: 154, 186, 37;
+	--mn-friendship-rgb: 0, 150, 136;
+	--mn-wisdom-rgb: 33, 150, 243;
+	--mn-victorious-rgb: 63, 81, 181;
+	--mn-longevity-rgb: 103, 58, 183;
+	--mn-love-rgb: 236, 121, 206;
+	--mn-red-rgb: 167, 68, 47;
+	--mn-goldenrod-rgb: 223, 169, 30;
+	--mn-teal-rgb: 0, 105, 95;
+	--mn-sky-rgb: 113, 186, 246;
+	--mn-lavender-rgb: 181, 158, 222;
+	--mn-rose-rgb: 244, 181, 227;
+	/* "Color" Variables */
+	--color-red: var(--mn-protection);
+	--color-orange: var(--mn-prosperity);
+	--color-yellow: var(--mn-goldenrod)
+	--color-green: var(--mn-safety);
+	--color-cyan: var(--mn-friendship);
+	--color-blue: var(--mn-wisdom);
+	--color-purple: var(--mn-longevity);
+	--color-pink: var(--mn-love);
+	--color-red-rgb: var(--mn-protection-rgb);
+	--color-orange-rgb: var(--mn-prosperity-rgb);
+	--color-yellow-rgb: var(--mn-goldenrod-rgb);
+	--color-green-rgb: var(--mn-safety-rgb);
+	--color-cyan-rgb: var(--mn-friendship-rgb);
+	--color-blue-rgb: var(--mn-wisdom-rgb);
+	--color-purple-rgb: var(--mn-longevity-rgb);
+	--color-pink-rgb: var(--mn-love-rgb);
 }
 
 .theme-light {

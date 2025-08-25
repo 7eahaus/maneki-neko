@@ -557,3 +557,47 @@ body {
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
 }
+
+/* Color Palette
+base = base color, main page background
+mantle = ribbon and nav bar color
+crust = file navigator background color
+surface = active pane background color
+mountain = text color
+rainbow color names based on meanings of colored maneki-neko in Japanese culture
+*/
+
+.theme-light, .theme-dark {
+	--mn-protection: #c04d35;
+	--mn-prosperity: #cb9407;
+	--mn-success: #fdc623;
+	--mn-safety: #9aba25;
+	--mn-friendship: #009688;
+	--mn-wisdom: #2196f3;
+	--mn-victorious: #3f51b5;
+	--mn-longevity: #673ab7;
+	--mn-love: #ec79ce;
+	/* accents */
+	--mn-red: #a7442f;
+	--mn-goldenrod: #dfa91e;
+	--mn-teal: #00695f;
+	--mn-sky: #71baf6;
+	--mn-lavender: #b59ede;
+	--mn-rose: #f4b5e3;
+}
+
+.theme-light {
+	--mn-base: #f2e2ca;
+	--mn-mantle: #c0a283;
+	--mn-crust: #cb9047;
+	--mn-surface: #a3735c;
+	--mn-mountain: #4e4d4a;
+}
+
+.theme-dark{
+	--mn-base: #2f2f2f;
+	--mn-mantle: #000000;
+	--mn-crust: #1a1a1a;
+	--mn-surface: #4e4d4a;
+	--mn-mountain: #ecdcc3;
+}

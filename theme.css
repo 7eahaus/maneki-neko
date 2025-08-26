@@ -1645,3 +1645,17 @@ h6,
 .callout[data-callout=cite] {
   --callout-icon: lucide-quote;
 }
+
+/* list styles */
+
+.list-bullet {
+  list-style-type: disc;
+  margin-left: 1.5em;
+	color: var(--mn-accent, var(--mn-peak));
+}
+
+.list-number {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+	color: var(--mn-accent, var(--mn-peak));
+}

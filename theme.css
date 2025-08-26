@@ -1569,6 +1569,8 @@ h6,
 	color: var(--mn-h6, var(--mn-accent));
 }
 
+/* add paragraph, general text size style here */
+
 /* tooltip styles */
 .tooltip {
 	border: 1px solid var(--mn-surface);

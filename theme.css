@@ -1109,6 +1109,59 @@ settings:
 				label: rose
 				value: var(--mn-rose)
 	-
+		id: mn-bolditalic
+		title: bold italic font color
+		description: choose a color for bold italic text
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-longevity)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			- 
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
 		id: mn-strikethrough
 		title: strikethrough font color
 		description: choose a color for strikethrough text

@@ -1486,3 +1486,29 @@ body {
 		"Roboto",
 		sans-serif;
 }
+
+strong,
+.cm-strong,
+.cm-s-obsidian span.cm-formatting-strong,
+.cm-s-obsidian span.cm-strong {
+	--bold-color: var(--mn-bold, var(--mn-wisdom));
+}
+
+em,
+.cm-em {
+	--italic-color: var(--mn-italic, var(--mn-protection));
+}
+
+del,
+.cm-strikethrough {
+	--strikethrough-color: var(--mn-strikethrough, var(--mn-longevity));
+}
+
+.cm-s-obsidian .cm-link.cm-strikethrough {
+	text-decoration: line-through;
+}
+
+.markdown-rendered blockquote,
+.cm-s-obsidian span.cm-quote {
+	--blockquote-border-color: var(--mn-blockquote, var(--mn-friendship));
+}

@@ -1,0 +1,158 @@
+/* ACTUAL CONFIGS */
+/* setting colors */
+.theme-dark, .theme-light {
+	/* background colors */
+	--background-primary: var(--mn-base);
+	--background-primary-rgb: var(--mn-base-rgb);
+	--background-secondary: var(--mn-crust);
+	--background-secondary-rgb: var(--mn-crust-rgb);
+	--background-modifier-border: var(--mn-mountain);
+	--background-modifier-border-rgb: var(--mn-mountain-rgb);
+	--background-modifier-form-field: var(--mn-surface);
+	--background-modifier-success: rgb(var(--mn-success), 90%);
+	--background-modifier-success-rgb: rgb(var(--mn-success-rgb), 90%);
+	--background-modifier-error: rgb(var(--mn-red), 90%);
+	--background-modifier-error-rgb: rgb(var(--mn-red-rgb), 90%);
+	--background-modifier-error-hover: var(--mn-red);
+	--background-modifier-cover: var(--mn-mantle);
+	/* color accents */
+	--color-accent: var(--mn-peak);
+	--color-accent-1: var(--mn-peak);
+	--color-accent-2: rgb(var(--mn-peak-rgb), 90%);
+	/* text colors */
+	--text-accent: var(--mn-accent);
+	--text-accent-hover: var(--mn-accent);
+	--text-normal: var(--mn-mountain);
+	--text-muted: rgb(var(--mn-mountain-rgb), 69%);
+	--text-faint: rgb(var(--mn-mountain-rgb), 44%);
+	--text-error: var(--mn-protection);
+	--text-error-hover: var(--mn-red);
+	--text-highlight-bg: var(--mn-peak);
+	--text-highlight-bg-active: var(--mn-peak);
+	--text-selection: rgb(var(--mn-peak-rgb), 22%);
+	/* interactive element colors */
+	--interactive-normal: var(--mn-peak);
+	--interactive-hover: rgb(var(--mn-peak-rgb), 50%);
+	--interactive-accent: var(--mn-accent);
+	--interactive-accent-rgb: var(--mn-accent);
+	--interactive-accent-hover: var(--mn-accent);
+	/* scrollbar colors */
+	--scrollbar-bg: var(--mn-surface);
+	--scrollbar-thumb-bg: var(--mn-mantle);
+	--scrollbar-active-thumb-bg: var(--mn-surface);
+}
+
+/* color scheme lighten and darken */
+.theme-dark {
+	color-scheme: dark;
+	--highlight-mix-blend-mode: lighten;
+}
+
+.theme-light {
+	color-scheme: light;
+	--highlight-mix-blend-mode: darken;
+}
+
+/* general UI changes */
+.workspace-ribbon,
+.workspace-drawer-ribbon {
+	background-color: var(--mn-mantle);
+}
+
+/* fonts */
+body {
+	--font-interface-theme:
+		"Fuzzy Bubbles",
+		"Holiday MDJP05",
+		"Inter",
+		sans-serif;
+	--font-text-theme:
+		"Fuzzy Bubbles",
+		"Holiday MDJP05",
+		"Inter",
+		sans-serif;
+}
+
+strong,
+.cm-strong,
+.cm-s-obsidian span.cm-formatting-strong,
+.cm-s-obsidian span.cm-strong {
+	--bold-color: var(--mn-bold, var(--mn-wisdom));
+	color: var(--mn-bold, var(--mn-wisdom));
+}
+
+em,
+.cm-em {
+	--italic-color: var(--mn-italic, var(--mn-protection));
+	color: var(--mn-italic, var(--mn-protection));
+}
+
+.cm-strong.cm-em, strong > em, em > strong {
+  --bolditalic-color: var(--mn-bolditalic, var(--mn-victorious));
+	color: var(--mn-bolditalic, var(--mn-victorious));
+}
+
+del,
+.cm-strikethrough {
+	--strikethrough-color: var(--mn-strikethrough, var(--mn-longevity));
+	color: var(--mn-strikethrough, var(--mn-longevity));
+}
+
+.cm-strikethrough {
+	text-decoration: line-through;
+}
+
+.markdown-rendered blockquote,
+.cm-s-obsidian span.cm-quote {
+	--blockquote-border-color: var(--mn-blockquote, var(--mn-friendship));
+}
+
+/* heading styles */
+.inline-title {
+	--heading-color: var(--mn-peak);
+	color: var(--mn-peak);
+}
+
+h1,
+.cm-header.cm-header-1 {
+	--h1-color: var(--mn-h1, var(--mn-accent));
+	color: var(--mn-h1, var(--mn-accent));
+}
+
+h2,
+.cm-header.cm-header-2 {
+	--h2-color: var(--mn-h2, var(--mn-accent));
+	color: var(--mn-h2, var(--mn-accent));
+}
+
+h3,
+.cm-header.cm-header-3 {
+	--h3-color: var(--mn-h3, var(--mn-accent));
+	color: var(--mn-h3, var(--mn-accent));
+}
+
+h4,
+.cm-header.cm-header-4 {
+	--h4-color: var(--mn-h4, var(--mn-accent));
+	color: var(--mn-h4, var(--mn-accent));
+}
+
+h5,
+.cm-header.cm-header-5 {
+	--h5-color: var(--mn-h5, var(--mn-accent));
+	color: var(--mn-h5, var(--mn-accent));
+}
+
+h6,
+.cm-header.cm-header-6 {
+	--h6-color: var(--mn-h6, var(--mn-accent));
+	color: var(--mn-h6, var(--mn-accent));
+}
+
+/* tooltip styles */
+.tooltip {
+	border: 1px solid var(--mn-surface);
+	background-color: var(--background-secondary);
+	box-shadow: 0 0 3px var(--mn-mantle);
+	color: var(--mn-peak);
+}

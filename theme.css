@@ -1569,3 +1569,79 @@ h6,
 	color: var(--mn-h6, var(--mn-accent));
 }
 
+/* tooltip styles */
+.tooltip {
+	border: 1px solid var(--mn-surface);
+	background-color: var(--background-secondary);
+	box-shadow: 0 0 3px var(--mn-mantle);
+	color: var(--mn-peak);
+}
+
+/* callout styles */
+.callout {
+	--callout-icon: lucide-megaphone;
+	border-color: rgb(var(--callout-color), 60%);
+	background-color: rgb(var(--callout-color), 10%);
+}
+
+.callout[data-callout=abstract],
+.callout[data-callout=summary],
+.callout[data-callout=tldr] {
+  --callout-icon: lucide-clipboard-list;
+}
+
+.callout[data-callout=info] {
+  --callout-icon: lucide-info;
+}
+
+.callout[data-callout=todo] {
+  --callout-icon: lucide-check-circle-2;
+}
+
+.callout[data-callout=tip],
+.callout[data-callout=hint],
+.callout[data-callout=important] {
+  --callout-icon: lucide-flame;
+}
+
+.callout[data-callout=success],
+.callout[data-callout=check],
+.callout[data-callout=done] {
+  --callout-icon: lucide-check;
+}
+
+.callout[data-callout=question],
+.callout[data-callout=help],
+.callout[data-callout=faq] {
+  --callout-icon: help-circle;
+}
+
+.callout[data-callout=warning],
+.callout[data-callout=caution],
+.callout[data-callout=attention] {
+  --callout-icon: lucide-alert-triangle;
+}
+
+.callout[data-callout=failure],
+.callout[data-callout=fail],
+.callout[data-callout=missing] {
+  --callout-icon: lucide-x;
+}
+
+.callout[data-callout=danger],
+.callout[data-callout=error] {
+  --callout-icon: lucide-zap;
+}
+
+.callout[data-callout=bug] {
+  --callout-icon: lucide-bug;
+}
+
+.callout[data-callout=example] {
+  --callout-icon: lucide-list;
+}
+
+.callout[data-callout=quote],
+.callout[data-callout=cite] {
+  --callout-icon: lucide-quote;
+}

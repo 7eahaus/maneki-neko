@@ -12,7 +12,7 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   /* Blockquotes */
   --blockquote-border-thickness: 2px;
-  --blockquote-border-color: rgb(var(--mn-peak));
+  --blockquote-border-color: var(--mn-accent);
   --blockquote-font-style: normal;
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;

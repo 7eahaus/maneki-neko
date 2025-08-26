@@ -759,6 +759,15 @@ rainbow color names based on meanings of colored maneki-neko in Japanese culture
 	--scrollbar-active-thumb-bg: var(--mn-surface);
 }
 
+/* change titlebar background to be mantle */
+
+.workspace-ribbon {
+	background-color: var(--mn-mantle);
+}
+
+.clickable-icon {
+	color: var(--mn-surface);
+}
 
 body {
 	--font-interface-theme:
@@ -805,4 +814,3 @@ del,
 .cm-s-obsidian span.cm-quote {
 	--blockquote-border-color: var(--mn-blockquote, var(--mn-friendship));
 }
-

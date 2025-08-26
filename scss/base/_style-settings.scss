@@ -1,0 +1,697 @@
+/* Style Settings Plugin Settings */
+/* @settings
+name: "Maneki-Neko Theme Settings"
+id: maneki-neko-theme-settings
+settings:
+	- 
+		id: maneki-neko-theme-accents
+		title: "Theme Accents"
+		description: select your preferred cat collar.
+		type: class-select
+		allowEmpty: false
+		default: full-palette
+		options:
+		-
+			label: full palette
+			value: mn-full-palette
+		-
+			label: protection
+			value: mn-protection
+		-
+			label: prosperity
+			value: mn-prosperity
+		-
+			label: success
+			value: mn-success
+		-
+			label: safety
+			value: mn-safety
+		-
+			label: friendship
+			value: mn-friendship
+		-
+			label: wisdom
+			value: mn-wisdom
+		-
+			label: victorious
+			value: mn-victorious
+		-
+			label: longevity
+			value: mn-longevity
+		-
+			label: love
+			value: mn-love
+		-
+			label: red
+			value: mn-red
+		-
+			label: goldenrod
+			value: mn-goldenrod
+		-
+			label: teal
+			value: mn-teal
+		-
+			label: sky
+			value: mn-sky
+		-
+			label: lavender
+			value: mn-lavender
+		-
+			label: rose
+			value: mn-rose
+	-
+		id: mn-page-title
+		title: file name color
+		description: choose a color for the file name
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-mountain)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-h1
+		title: h1 color
+		description: choose the color for h1 headings
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-peak)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-h2
+		title: h2 color
+		description: choose the color for h2 headings
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-peak)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-h3
+		title: h3 color
+		description: choose the color for h3 headings
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-peak)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-h4
+		title: h4 color
+		description: choose the color for h4 headings
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-peak)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-h5
+		title: h5 color
+		description: choose the color for h5 headings
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-peak)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-h6
+		title: h6 color
+		description: choose the color for h6 headings
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-peak)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-bold
+		title: bold font color
+		description: choose a color for bold text
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-wisdom)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-italic
+		title: italic font color
+		description: choose a color for italic text
+		allowEmpty: false
+		default: var(--mn-protection)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-bolditalic
+		title: bold italic font color
+		description: choose a color for bold italic text
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-longevity)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			- 
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-strikethrough
+		title: strikethrough font color
+		description: choose a color for strikethrough text
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-longevity)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+	-
+		id: mn-blockquote
+		title: blockquote color
+		description: choose a color for blockquote text
+		type: variable-select
+		allowEmpty: false
+		default: var(--mn-friendship)
+		options:
+			-
+				label: protection
+				value: var(--mn-protection)
+			-
+				label: prosperity
+				value: var(--mn-prosperity)
+			-
+				label: success
+				value: var(--mn-success)
+			-
+				label: safety
+				value: var(--mn-safety)
+			-
+				label: friendship
+				value: var(--mn-friendship)
+			-
+				label: wisdom
+				value: var(--mn-wisdom)
+			-
+				label: victorious
+				value: var(--mn-victorious)
+			-
+				label: longevity
+				value: var(--mn-longevity)
+			-
+				label: love
+				value: var(--mn-love)
+			-
+				label: red
+				value: var(--mn-red)
+			-
+				label: goldenrod
+				value: var(--mn-goldenrod)
+			-
+				label: teal
+				value: var(--mn-teal)
+			-
+				label: sky
+				value: var(--mn-sky)
+			-
+				label: lavender
+				value: var(--mn-lavender)
+			-
+				label: rose
+				value: var(--mn-rose)
+*/

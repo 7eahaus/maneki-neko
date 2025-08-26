@@ -1,0 +1,41 @@
+/* COMMAND PALETTE STYLES */
+.prompt {
+  --prompt-border-color: rgb(var(--mn-surface));
+
+  .prompt-input[type="text"] {
+    border: 0;
+  }
+
+  .prompt-results {
+    background-color: var(--background-secondary);
+    box-shadow:
+      inset 0 0 10px rgb(var(--mn-crust)),
+      inset 0 0 12px rgb(var(--mn-base));
+  }
+
+  &:hover .suggestion-hotkey {
+    box-shadow:
+      inset 0 0 2px rgb(var(--mn-crust)),
+      inset 0 0 4px rgb(var(--mn-base));
+  }
+}
+
+.suggestion-item.is-selected {
+  background-color: rgb(var(--mn-accent));
+  color: var(--mn-accent);
+
+  & .suggestion-flair {
+    color: var(--mn-accent);
+  }
+}
+
+.suggestion-item.mod-complex {
+  .suggestion-hotkey {
+    background-color: rgb(var(--mn-surface));
+    color: var(--text-normal);
+  }
+}
+
+.suggestion-item.mod-complex.is-selected .suggestion-note {
+  color: var(--mn-accent);
+}

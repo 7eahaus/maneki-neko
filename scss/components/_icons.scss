@@ -1,0 +1,36 @@
+/* ICON STYLES */
+.clickable-icon,
+.mod-left-split .workspace-tab-header,
+.mod-right-split .workspace-tab-header {
+  margin: 0 2px;
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+
+  &:hover {
+    --background-modifier-hover: rgb(var(--mn-accent));
+
+    color: var(--text-accent);
+  }
+
+  &:hover svg {
+    color: var(--text-accent);
+  }
+}
+
+/* Windows and Linux min, max, and close buttons */
+
+.mod-linux .titlebar-button,
+.mod-windows .titlebar-button {
+  transition: var(--transition-hover-bg), var(--transition-hover-color);
+}
+
+.mod-linux .titlebar-button:hover,
+.mod-windows .titlebar-button:hover {
+  background-color: rgb(var(--rose));
+  color: var(--mn-mountain);
+}
+
+.mod-linux .titlebar-button.mod-close:hover,
+.mod-windows .titlebar-button.mod-close:hover {
+  background-color: rgb(var(--mn-red));
+  color: var(--mn-mountain);
+}

@@ -548,7 +548,7 @@ body {
   --text-on-accent: var(--text-normal);
   --text-error: var(--color-red);
   --text-success: var(--color-green);
-  --text-selection: hsla(var(--color-accent-hsl), 2%);
+  --text-selection: rgb(var(--color-accent-rgb), 3%);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --interactive-normal: var(--color-base-00);
@@ -1337,20 +1337,33 @@ rainbow color names based on meanings of colored maneki-neko in Japanese culture
 
 .theme-light {
 	--mn-base: #f2e2ca;
+	--mn-base-rgb: 242, 226, 202;
 	--mn-mantle: #c0a283;
+	--mn-mantle-rgb: 192, 162, 131;
 	--mn-crust: #cb9047;
+	--mn-crust-rgb: 203, 144, 71;
 	--mn-surface: #a3735c;
+	--mn-surface-rgb: 163, 115, 92;
 	--mn-mountain: #4e4d4a;
+	--mn-mountain-rgb: 78, 77, 74;
 	--mn-peak: #c04d35;
+	--mn-peak-rgb: 192, 77, 53;
+
 }
 
 .theme-dark{
 	--mn-base: #2f2f2f;
+	--mn-base-rgb: 47, 47, 47;
 	--mn-mantle: #000000;
+	--mn-mantle-rgb: 0, 0, 0;
 	--mn-crust: #1a1a1a;
+	--mn-crust-rgb: 26, 26, 26;
 	--mn-surface: #4e4d4a;
+	--mn-surface-rgb: 78, 77, 74;
 	--mn-mountain: #ecdcc3;
+	--mn-mountain-rgb: 236, 220, 195;
 	--mn-peak: #9aba25;
+	--mn-peak-rgb: 154, 186, 37;
 }
 
 /* Selecting Accents */
@@ -1418,5 +1431,45 @@ rainbow color names based on meanings of colored maneki-neko in Japanese culture
 	--mn-accent: var(--mn-rose);
 }
 
-
-
+/* ------------- Actual Configs ------------- */
+.theme-dark, .theme-light {
+	/* background colors */
+	--background-primary: var(--mn-base);
+	--background-primary-rgb: var(--mn-base-rgb);
+	--background-secondary: var(--mn-crust);
+	--background-secondary-rgb: var(--mn-crust-rgb);
+	--background-modifier-border: var(--mn-mountain);
+	--background-modifier-border-rgb: var(--mn-mountain-rgb);
+	--background-modifier-form-field: var(--mn-surface);
+	--background-modifier-success: rgb(var(--mn-success), 90%);
+	--background-modifier-success-rgb: rgb(var(--mn-success-rgb), 90%);
+	--background-modifier-error: rgb(var(--mn-red), 90%);
+	--background-modifier-error-rgb: rgb(var(--mn-red-rgb), 90%);
+	--background-modifier-error-hover: var(--mn-red);
+	--background-modifier-cover: var(--mn-mantle);
+	/* color accents */
+	--color-accent: var(--mn-peak);
+	--color-accent-1: var(--mn-peak);
+	--color-accent-2: rgb(var(--mn-peak-rgb), 90%);
+	/* text colors */
+	--text-accent: var(--mn-accent);
+	--text-accent-hover: var(--mn-accent);
+	--text-normal: var(--mn-mountain);
+	--text-muted: rgb(var(--mn-mountain-rgb), 69%);
+	--text-faint: rgb(var(--mn-mountain-rgb), 44%);
+	--text-error: var(--mn-protection);
+	--text-error-hover: var(--mn-red);
+	--text-highlight-bg: var(--mn-peak);
+	--text-highlight-bg-active: var(--mn-peak);
+	--text-selection: rgb(var(--mn-peak-rgb), 22%);
+	/* interactive element colors */
+	--interactive-normal: var(--mn-peak);
+	--interactive-hover: rgb(var(--mn-peak-rgb), 50%);
+	--interactive-accent: var(--mn-accent);
+	--interactive-accent-rgb: var(--mn-accent);
+	--interactive-accent-hover: var(--mn-accent);
+	/* scrollbar colors */
+	--scrollbar-bg: var(--mn-surface);
+	--scrollbar-thumb-bg: var(--mn-mantle);
+	--scrollbar-active-thumb-bg: var(--mn-surface);
+}

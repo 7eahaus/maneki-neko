@@ -777,18 +777,25 @@ strong,
 .cm-s-obsidian span.cm-formatting-strong,
 .cm-s-obsidian span.cm-strong {
 	--bold-color: var(--mn-bold, var(--mn-wisdom));
+	color: var(--mn-bold, var(--mn-wisdom));
 }
 
 em,
 .cm-em {
 	--italic-color: var(--mn-italic, var(--mn-protection));
+	color: var(--mn-italic, var(--mn-protection));
+}
+
+.cm-strong.cm-em, strong > em, em > strong {
+  --bolditalic-color: var(--mn-bolditalic, var(--mn-victorious));
+	color: var(--mn-bolditalic, var(--mn-victorious));
 }
 
 del,
 .cm-strikethrough {
 	--strikethrough-color: var(--mn-strikethrough, var(--mn-longevity));
+	color: var(--mn-strikethrough, var(--mn-longevity));
 }
-/* fix this later: it isn't working for some reason */
 
 .cm-s-obsidian .cm-link.cm-strikethrough {
 	text-decoration: line-through;
@@ -798,3 +805,4 @@ del,
 .cm-s-obsidian span.cm-quote {
 	--blockquote-border-color: var(--mn-blockquote, var(--mn-friendship));
 }
+

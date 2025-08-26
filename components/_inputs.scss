@@ -34,7 +34,7 @@ input[type="number"]:focus-visible {
   box-shadow: 0 0 2px inset rgb(var(--mn-peak));
 
   &::after {
-    --toggle-thumb-color: var(--text-on-accent);
+    --toggle-thumb-color: var(--mn-surface);
     box-shadow: 0 0 4px rgb(var(--mn-base));
 
     &:hover {

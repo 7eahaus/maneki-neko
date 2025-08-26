@@ -156,3 +156,63 @@ h6,
 	box-shadow: 0 0 3px var(--mn-mantle);
 	color: var(--mn-peak);
 }
+
+/* list styles */
+.list-bullet {
+  list-style-type: disc;
+  margin-left: 1em;
+	color: var(--mn-accent, var(--mn-peak));
+}
+
+.list-number {
+  list-style-type: decimal;
+  margin-left: 1em;
+	color: var(--mn-accent, var(--mn-peak));
+}
+
+/* link styles */
+.cm-hmd-internal-link {
+	--link-color: var(--mn-friendship);
+}
+
+.cm-hmd-internal-link:hover {
+	--link-color-hover: var(--mn-friendship);
+}
+
+.cm-hmd-internal-link .is-unresolved {
+	--link-unresolved-color: var(--mn-teal)
+}
+
+.cm-link .cm-underline {
+	--link-external-color: var(--mn-wisdom);
+}
+
+/* horizontal rule styles */
+/* original code from @imrudex on in the Obsidian Members Discord*/
+.markdown-source-view hr,
+.markdown-preview-view hr {
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  border: none;
+  height: 3px;
+  background-image: linear-gradient(to right, var(--background-primary), var(--mn-accent) , var(--background-primary));
+  position: relative;
+  overflow: visible;
+}
+
+.markdown-source-view hr::before, 
+.markdown-preview-view hr::before {
+	/* TODO: add SVG icon instead of kaomoji
+  mask-image: var(--mnicon);
+	mask-size: 69%;
+	*/
+	content: "   ฅ(ᵔ꒳ ᵔマ.ᐟ   " ;
+  color: var(--mn-accent);
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  padding: none;
+  background-color: var(--background-primary);
+}

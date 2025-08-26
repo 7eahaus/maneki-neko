@@ -1473,3 +1473,16 @@ rainbow color names based on meanings of colored maneki-neko in Japanese culture
 	--scrollbar-thumb-bg: var(--mn-mantle);
 	--scrollbar-active-thumb-bg: var(--mn-surface);
 }
+
+
+body {
+	--font-interface-theme:
+		"Noto Sans",
+		"Inter",
+		sans-serif;
+	--font-text-theme:
+		"Caveat",
+		/* Japanese Handwriting Font */
+		"Roboto",
+		sans-serif;
+}

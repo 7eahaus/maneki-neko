@@ -1,13 +1,4 @@
-/* Color Palette Notes
-base = base color, main page background
-mantle = ribbon and nav bar color
-crust = file navigator background color
-surface = active pane background color
-mountain = text color
-peak = accent color
-rainbow color names based on meanings of colored maneki-neko in Japanese culture
-*/
-
+/* Maneki Neko Color Palette and Theme Variables */
 .theme-light, .theme-dark {
 	--mn-protection: #c04d35;
 	--mn-prosperity: #cb9407;
@@ -18,16 +9,14 @@ rainbow color names based on meanings of colored maneki-neko in Japanese culture
 	--mn-victorious: #3f51b5;
 	--mn-longevity: #673ab7;
 	--mn-love: #ec79ce;
-	/* accents */
 	--mn-red: #a7442f;
 	--mn-goldenrod: #dfa91e;
 	--mn-teal: #00695f;
 	--mn-sky: #71baf6;
 	--mn-lavender: #b59ede;
 	--mn-rose: #f4b5e3;
-	/* RGB */
 	--mn-protection-rgb: 192, 77, 53;
-	--mn-prosperity-rgb: 203, 148, 7;
+	--mn-prosperity-rgb: 203, 148, 7;	
 	--mn-success-rgb: 253, 198, 35;
 	--mn-safety-rgb: 154, 186, 37;
 	--mn-friendship-rgb: 0, 150, 136;
@@ -40,7 +29,6 @@ rainbow color names based on meanings of colored maneki-neko in Japanese culture
 	--mn-teal-rgb: 0, 105, 95;
 	--mn-sky-rgb: 113, 186, 246;
 	--mn-lavender-rgb: 181, 158, 222;
-	--mn-rose-rgb: 244, 181, 227;
 	/* "Color" Variables */
 	--color-red: var(--mn-protection);
 	--color-orange: var(--mn-prosperity);
@@ -61,33 +49,60 @@ rainbow color names based on meanings of colored maneki-neko in Japanese culture
 }
 
 .theme-light {
+	--mn-text: #2b1e18;
+	--mn-subtext: #493329;
 	--mn-base: #f2e2ca;
-	--mn-base-rgb: 242, 226, 202;
 	--mn-mantle: #c0a283;
-	--mn-mantle-rgb: 192, 162, 131;
 	--mn-crust: #cb9047;
-	--mn-crust-rgb: 203, 144, 71;
-	--mn-surface: #a3735c;
-	--mn-surface-rgb: 163, 115, 92;
-	--mn-mountain: #4e4d4a;
-	--mn-mountain-rgb: 78, 77, 74;
+	--mn-overlay2: #d8bfa8;
+	--mn-overlay1: #c9ad97;
+	--mn-overlay0: #bb9c85;
+	--mn-surface2: #ad8a74;
+	--mn-surface1: #a37d68;
+	--mn-surface0: #926752;
+	--mn-mountain: #d9725c;
 	--mn-peak: #c04d35;
+	--mn-text-rgb: 43, 30, 24;
+	--mn-subtext-rgb: 73, 51, 41;
+	--mn-base-rgb: 242, 226, 202;
+	--mn-mantle-rgb: 192, 162, 131;
+	--mn-crust-rgb: 203, 144, 71;
+	--mn-overlay2-rgb: 216, 191, 168;
+	--mn-overlay1-rgb: 201, 173, 151;
+	--mn-overlay0-rgb: 187, 156, 133;
+	--mn-surface2-rgb: 173, 138, 116;
+	--mn-surface1-rgb: 163, 125, 104;
+	--mn-surface0-rgb: 146, 103, 82;
+	--mn-mountain-rgb: 217, 114, 92;
 	--mn-peak-rgb: 192, 77, 53;
-
 }
 
 .theme-dark{
+	--mn-text: #ecdcc3;
+	--mn-subtext: #d4ba93;
 	--mn-base: #2f2f2f;
-	--mn-base-rgb: 47, 47, 47;
-	--mn-mantle: #000000;
-	--mn-mantle-rgb: 0, 0, 0;
-	--mn-crust: #1a1a1a;
-	--mn-crust-rgb: 26, 26, 26;
-	--mn-surface: #4e4d4a;
-	--mn-surface-rgb: 78, 77, 74;
-	--mn-mountain: #ecdcc3;
-	--mn-mountain-rgb: 236, 220, 195;
+	--mn-mantle: #1c1c1c;
+	--mn-crust: #000000;
+	--mn-surface2: #5f5f5f;
+	--mn-surface1: #4e4e4e;
+	--mn-surface0: #3c3c3c;
+	--mn-overlay2: #aca08e;
+	--mn-overlay1: #81786a;
+	--mn-overlay0: #6b6459;
+	--mn-mountain: #d9725c;
 	--mn-peak: #c04d35;
+	--mn-text-rgb: 236, 220, 195;
+	--mn-subtext-rgb: 212, 186, 147;
+	--mn-base-rgb: 47, 47, 47;
+	--mn-mantle-rgb: 28, 28, 28;
+	--mn-crust-rgb: 0, 0, 0;
+	--mn-surface2-rgb: 95, 95, 95;
+	--mn-surface1-rgb: 78, 78, 78;
+	--mn-surface0-rgb: 60, 60, 60;
+	--mn-overlay2-rgb: 172, 160, 142;
+	--mn-overlay1-rgb: 129, 120, 106;
+	--mn-overlay0-rgb: 107, 100, 89;
+	--mn-mountain-rgb: 217, 114, 92;
 	--mn-peak-rgb: 192, 77, 53;
 }
 

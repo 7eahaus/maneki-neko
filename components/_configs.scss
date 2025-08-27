@@ -1,45 +1,61 @@
 /* ACTUAL CONFIGS */
 /* setting colors */
-.theme-dark, .theme-light {
-	/* background colors */
-	--background-primary: var(--mn-base);
-	--background-primary-rgb: var(--mn-base-rgb);
-	--background-secondary: var(--mn-crust);
-	--background-secondary-rgb: var(--mn-crust-rgb);
-	--background-modifier-border: var(--mn-mountain);
-	--background-modifier-border-rgb: var(--mn-mountain-rgb);
-	--background-modifier-form-field: var(--mn-surface);
-	--background-modifier-success: rgb(var(--mn-success), 90%);
-	--background-modifier-success-rgb: rgb(var(--mn-success-rgb), 90%);
-	--background-modifier-error: rgb(var(--mn-red), 90%);
-	--background-modifier-error-rgb: rgb(var(--mn-red-rgb), 90%);
-	--background-modifier-error-hover: var(--mn-red);
-	--background-modifier-cover: var(--mn-mantle);
-	/* color accents */
-	--color-accent: var(--mn-peak);
-	--color-accent-1: var(--mn-peak);
-	--color-accent-2: rgb(var(--mn-peak-rgb), 90%);
-	/* text colors */
-	--text-accent: var(--mn-accent);
-	--text-accent-hover: var(--mn-accent);
-	--text-normal: var(--mn-mountain);
-	--text-muted: rgb(var(--mn-mountain-rgb), 69%);
-	--text-faint: rgb(var(--mn-mountain-rgb), 44%);
-	--text-error: var(--mn-protection);
-	--text-error-hover: var(--mn-red);
-	--text-highlight-bg: var(--mn-peak);
-	--text-highlight-bg-active: var(--mn-peak);
-	--text-selection: rgb(var(--mn-peak-rgb), 22%);
-	/* interactive element colors */
-	--interactive-normal: var(--mn-peak);
-	--interactive-hover: rgb(var(--mn-peak-rgb), 50%);
-	--interactive-accent: var(--mn-accent);
-	--interactive-accent-rgb: var(--mn-accent);
-	--interactive-accent-hover: var(--mn-accent);
-	/* scrollbar colors */
-	--scrollbar-bg: var(--mn-surface);
-	--scrollbar-thumb-bg: var(--mn-mantle);
-	--scrollbar-active-thumb-bg: var(--mn-surface);
+.theme-dark,
+.theme-light {
+  --background-primary: rgb(var(--mn-base));
+  --background-primary-rgb: var(--mn-base);
+  --background-primary-alt: rgb(var(--mn-crust));
+  --background-secondary: rgb(var(--mn-crust));
+  --background-secondary-alt: rgb(var(--mn-mantle));
+  --background-modifier-border: rgb(var(--mn-surface0));
+  --background-modifier-form-field: rgb(var(--mn-surface0), 30%);
+  --background-modifier-form-field-highlighted: rgb(var(--mn-surface0), 22%);
+  --background-modifier-box-shadow: rgb(var(--mn-crust), 30%);
+  --background-modifier-success: rgb(var(--mn-safety), 90%);
+  --background-modifier-success-rgb: var(--mn-safety);
+  --background-modifier-error: rgb(var(--mn-red), 90%);
+  --background-modifier-error-rgb: var(--mn-red);
+  --background-modifier-error-hover: rgb(var(--mn-red), 100%);
+  --background-modifier-cover: rgb(var(--mn-crust), 90%);
+  --color-accent: rgb(var(--mn-accent));
+  --color-accent-1: rgb(var(--mn-accent));
+  --color-accent-2: rgb(var(--mn-accent), 90%);
+  --text-accent: rgb(var(--mn-accent));
+  --text-accent-hover: rgb(var(--mn-accent));
+  --text-normal: rgb(var(--mn-text));
+  --text-muted: rgb(var(--mn-subtext2));
+  --text-muted-rgb: var(--mn-subtext2);
+  --text-faint: rgb(var(--mn-surface1));
+  --text-error: rgb(var(--mn-red));
+  --text-error-hover: rgb(var(--mn-red), 80%);
+  --text-highlight-bg: rgb(var(--mn-accent), 100%);
+  --text-highlight-bg-active: rgb(var(--mn-accent), 100%);
+  --text-selection: rgb(var(--mn-accent), 30%);
+  --text-on-accent: rgb(var(--mn-mantle));
+  --text-on-accent-inverted: rgb(var(--mn-mantle));
+  --interactive-normal: rgb(var(--mn-surface0));
+  --interactive-hover: rgb(var(--mn-surface1));
+  --interactive-accent: rgb(var(--mn-accent));
+  --interactive-accent-rgb: var(--mn-accent);
+  --interactive-accent-hover: rgb(var(--mn-accent));
+  --interactive-success: rgb(var(--mn-safety));
+  --scrollbar-active-thumb-bg: rgb(var(--mn-text), 20%);
+  --scrollbar-bg: rgb(var(--mn-text), 5%);
+  --scrollbar-thumb-bg: rgb(var(--mn-text), 10%);
+  --mono-rgb-0: var(--mn-crust);
+  --mono-rgb-100: var(--mn-text);
+	/*color bases*/
+  --color-base-00: rgb(var(--mn-crust));
+  --color-base-10: rgb(var(--mn-mantle));
+  --color-base-20: rgb(var(--mn-base));
+  --color-base-25: rgb(var(--mn-surface0));
+  --color-base-30: rgb(var(--mn-surface1));
+  --color-base-35: rgb(var(--mn-surface2));
+  --color-base-40: rgb(var(--mn-overlay0));
+  --color-base-50: rgb(var(--mn-overlay1));
+  --color-base-60: rgb(var(--mn-overlay2));
+  --color-base-70: rgb(var(--mn-subtext));
+  --color-base-100: rgb(var(--mn-text));
 }
 
 /* color scheme lighten and darken */
@@ -53,11 +69,6 @@
 	--highlight-mix-blend-mode: darken;
 }
 
-/* general UI changes */
-.workspace-ribbon,
-.workspace-drawer-ribbon {
-	background-color: var(--mn-mantle);
-}
 
 /* fonts */
 body {
@@ -100,11 +111,6 @@ del,
 
 .cm-strikethrough {
 	text-decoration: line-through;
-}
-
-.markdown-rendered blockquote,
-.cm-s-obsidian span.cm-quote {
-	--blockquote-border-color: var(--mn-blockquote, var(--mn-friendship));
 }
 
 /* heading styles */
@@ -157,35 +163,50 @@ h6,
 	color: var(--mn-peak);
 }
 
-/* list styles */
-.list-bullet {
-  list-style-type: disc;
-  margin-left: 1em;
-	color: var(--mn-accent, var(--mn-peak));
-}
-
-.list-number {
-  list-style-type: decimal;
-  margin-left: 1em;
-	color: var(--mn-accent, var(--mn-peak));
-}
-
-/* link styles */
-.cm-hmd-internal-link {
+body {
+	/*list styles */
+	--list-indent: calc(var(--indent-unit) * var(--indent-size));
+	--list-indent-editing: 0.75em;
+	--list-indent-source: 0;
+	--list-spacing: 0.075em;
+	--list-marker-color: var(--mn-accent, var(--mn-peak));
+	--list-marker-color-hover: var(--mn-accent, var(--mn-peak));
+	--list-marker-color-collapsed: var(--mn-accent, var(--mn-peak));
+	--list-bullet-border: none;
+	--list-bullet-radius: 50%;
+	--list-bullet-size: 0.3em;
+	--list-bullet-transform: none;
+	--list-numbered-style: decimal;
+	--list-bullet-end-padding: 1.3em;
+	/* blockquote styles */
+	--blockquote-border-thickness: 2px;
+	--blockquote-border-color: var(--mn-accent, var(--mn-friendship));
+	--blockquote-font-style: normal;
+	--blockquote-color: inherit;
+	--blockquote-background-color: transparent;
+	/* link styles */
 	--link-color: var(--mn-friendship);
-}
-
-.cm-hmd-internal-link:hover {
 	--link-color-hover: var(--mn-friendship);
-}
-
-.cm-hmd-internal-link .is-unresolved {
-	--link-unresolved-color: var(--mn-teal)
-}
-
-.cm-link .cm-underline {
+	--link-unresolved-color: var(--mn-teal);
 	--link-external-color: var(--mn-wisdom);
+	/* tag styles */
+  --tag-size: var(--font-smaller);
+  --tag-color: var(--text-accent);
+  --tag-color-hover: var(--text-accent);
+	--tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: rgb(var(--mn-accent), 10%);
+  --tag-background-hover: rgb(var(--mn-accent), 20%);
+  --tag-border-color: transparent;
+  --tag-border-color-hover: var(--mn-accent);
+  --tag-border-width: 0px;
+  --tag-padding-x: 7px;
+  --tag-padding-y: 3px;
+  --tag-radius: 13px;
+  --tag-weight: inherit;
+	/* command palette styles */
 }
+
 
 /* horizontal rule styles */
 /* original code from @imrudex on in the Obsidian Members Discord*/
@@ -215,22 +236,4 @@ h6,
   transform: translate(-50%, 50%);
   padding: none;
   background-color: var(--background-primary);
-}
-
-/* tag styles */ 
-a.tag,
-.tag {
-  --tag-size: var(--font-medium);
-  --tag-color: var(--mn-accent);
-  --tag-color-hover: var(--mn-accent);
-  --tag-decoration: none;
-  --tag-decoration-hover: none;
-  --tag-background: rgb(var(--mn-accent-rgb), 10%);
-  --tag-background-hover: rgb(var(--mn-accent-rgb), 20%);
-  --tag-border-color: var(--mn-accent);
-  --tag-border-color-hover: var(--mn-accent);
-	--tag-border-width: none;
-  --tag-padding-x: 7px;
-  --tag-padding-y: 3px;
-  --tag-radius: 0.8em;
 }

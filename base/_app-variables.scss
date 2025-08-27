@@ -95,13 +95,10 @@ body {
   --dialog-max-height: 85vh;
   /* Dividers â€” between panes */
   --divider-color: var(--background-modifier-border);
-  --divider-color-hover: var(--mn-peak);
+  --divider-color-hover: var(--interactive-accent);
   --divider-width: 1px;
   --divider-width-hover: 2px;
   --divider-vertical-height: calc(100% - var(--header-height));
-	/* Dropdowns */
-	--dropdown-background: var(--mn-accent);
-	--dropdown-background-hover: rgb(var(--mn-accent), 50%);
   /* Dragging */
   --drag-ghost-background: rgb(0, 0, 0, 85%);
   --drag-ghost-text-color: var(--text-normal);
@@ -132,9 +129,6 @@ body {
   --font-smallest: 0.8em;
   --font-smaller: 0.875em;
   --font-small: 0.933em;
-	--font-medium: 1em;
-	--font-large: 1.25em;
-	--font-xlarge: 1.5em;
   /* UI font sizes */
   --font-ui-smaller: 11px;
   --font-ui-small: 13px;
@@ -288,7 +282,7 @@ body {
   --link-unresolved-decoration-style: solid;
   --link-unresolved-decoration-color: rgb(var(--mn-teal));
   /* Lists */
-  --list-indent: 3rem;
+  --list-indent: 2.5rem;
   --list-spacing: 0.5rem;
   --list-marker-color: rgb(var(--mn-accent));
   --list-marker-color-hover: var(--text-muted);
@@ -482,18 +476,22 @@ body {
   --table-row-alt-background: var(--table-background);
   --table-row-last-border-width: var(--table-border-width);
   /* Tags */
-  --tag-size: var(--font-medium);
-  --tag-color: var(--mn-accent);
-  --tag-color-hover: var(--mn-accent);
+  --tag-size: max(var(--font-ui-medium), var(--font-small));
+  --tag-color: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-color-hover: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
   --tag-decoration: none;
-  --tag-decoration-hover: none;
-  --tag-background: rgb(var(--mono-rgb-100), 10%);
-  --tag-background-hover: rgb(var(--mono-rgb-100), 15%);
+  --tag-decoration-hover: underline;
+  --tag-background: transparent;
+  --tag-background-hover: 0;
   --tag-border-color: hsl(var(--interactive-accent-hsl), 10%);
-  --tag-border-color-hover: var(--mn-accent);
-  --tag-border-width: 1px;
-  --tag-padding-x: 7px;
-  --tag-padding-y: 3px;
+  --tag-border-color-hover:
+    hsl(
+      var(--interactive-accent-hsl),
+      15%
+    );
+  --tag-border-width: 0;
+  --tag-padding-x: 0;
+  --tag-padding-y: 0;
   --tag-radius: 0.8em;
   /* Window frame */
   --titlebar-background: var(--background-secondary);

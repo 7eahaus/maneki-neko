@@ -436,7 +436,7 @@ settings:
 		description: choose a color for bold text
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-wisdom)
+		default: wisdom
 		options:
 			-
 				label: protection
@@ -488,7 +488,7 @@ settings:
 		title: italic font color
 		description: choose a color for italic text
 		allowEmpty: false
-		default: var(--mn-protection)
+		default: protection
 		options:
 			-
 				label: protection
@@ -541,7 +541,7 @@ settings:
 		description: choose a color for bold italic text
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-longevity)
+		default: friendship
 		options:
 			-
 				label: protection
@@ -594,7 +594,7 @@ settings:
 		description: choose a color for strikethrough text
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-longevity)
+		default: longevity
 		options:
 			-
 				label: protection
@@ -647,7 +647,7 @@ settings:
 		description: choose a color for blockquote text
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-friendship)
+		default: friendship
 		options:
 			-
 				label: protection

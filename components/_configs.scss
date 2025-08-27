@@ -216,3 +216,21 @@ h6,
   padding: none;
   background-color: var(--background-primary);
 }
+
+/* tag styles */ 
+a.tag,
+.tag {
+  --tag-size: var(--font-medium);
+  --tag-color: var(--mn-accent);
+  --tag-color-hover: var(--mn-accent);
+  --tag-decoration: none;
+  --tag-decoration-hover: none;
+  --tag-background: rgb(var(--mn-accent-rgb), 10%);
+  --tag-background-hover: rgb(var(--mn-accent-rgb), 20%);
+  --tag-border-color: var(--mn-accent);
+  --tag-border-color-hover: var(--mn-accent);
+	--tag-border-width: none;
+  --tag-padding-x: 7px;
+  --tag-padding-y: 3px;
+  --tag-radius: 0.8em;
+}

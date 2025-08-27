@@ -9,7 +9,9 @@ This theme was made with love to invoke the image of *maneki-neko*, Japanese luc
   - condensed style settings into one tab
   - styled horizontal rule to fade in and out with a cat kaomoji in the middle
   - styled status bar
-  - tired to make mobile improvements (failed)
+  - tired to make mobile improvements
+    -fixed some UI colors that weren't showing correctly on dark mode
+  -began using SASS to compile theme and sorting out different parts of the theme into different `.scss` files
 - 2025-08-25
   - coded the basic appearance on desktop for both dark and light mode
   - added limited style settings plugin support

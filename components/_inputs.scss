@@ -30,13 +30,11 @@ input[type="number"]:focus-visible {
 }
 
 .checkbox-container {
-  --background-modifier-border-hover: var(--mn-peak);
-  box-shadow: 0 0 2px inset rgb(var(--mn-peak));
-
+  --background-modifier-border-hover: var(--mn-crust);
+  box-shadow: 0 0 2px inset rgb(var(--mn-crust));
   &::after {
-    --toggle-thumb-color: var(--mn-surface);
-    box-shadow: 0 0 4px rgb(var(--mn-base));
-
+    --toggle-thumb-color: var(--mn-mountain);
+    box-shadow: 0 0 4px rgb(var(--mn-crust));
     &:hover {
     box-shadow: none;
     }

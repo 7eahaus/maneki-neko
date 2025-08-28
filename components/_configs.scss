@@ -18,25 +18,26 @@
   --background-modifier-error-hover: rgb(var(--mn-red), 100%);
   --background-modifier-cover: rgb(var(--mn-crust), 90%);
   --color-accent: var(--mn-accent);
+  --color-accent-rgb: var(--mn-accent);
   --color-accent-1: var(--mn-accent);
   --color-accent-2: rgb(var(--mn-accent), 90%);
   --text-accent: var(--mn-accent);
   --text-accent-hover: var(--mn-accent);
   --text-normal: var(--mn-text);
-  --text-muted: var(--mn-subtext2);
-  --text-muted-rgb: var(--mn-subtext2-rgb);
+  --text-muted: var(--mn-subtext);
+  --text-muted-rgb: var(--mn-subtext-rgb);
   --text-faint: var(--mn-surface1);
   --text-error: var(--mn-red);
   --text-error-hover: rgb(var(--mn-red), 80%);
   --text-highlight-bg: rgb(var(--mn-accent), 100%);
   --text-highlight-bg-active: rgb(var(--mn-accent), 100%);
-  --text-selection: rgb(var(--mn-accent), 30%);
+  --text-selection: rgb(var(--mn-accent, var(--mn-peak)), 30%);
   --text-on-accent: var(--mn-mantle);
   --text-on-accent-inverted: var(--mn-mantle);
   --interactive-normal: var(--mn-surface0);
   --interactive-hover: var(--mn-surface1);
   --interactive-accent: var(--mn-accent);
-  --interactive-accent-rgb: var(--mn-accent-rgb);
+  --interactive-accent-rgb: var(--mn-accent);
   --interactive-accent-hover: var(--mn-accent);
   --interactive-success: var(--mn-safety);
   --scrollbar-active-thumb-bg: rgb(var(--mn-text), 20%);
@@ -84,75 +85,16 @@ body {
 		sans-serif;
 }
 
-strong,
-.cm-strong,
-.cm-s-obsidian span.cm-formatting-strong,
-.cm-s-obsidian span.cm-strong {
-	--bold-color: var(--mn-bold, var(--mn-wisdom));
-	color: var(--mn-bold, var(--mn-wisdom));
-}
-
-em,
-.cm-em {
-	--italic-color: var(--mn-italic, var(--mn-protection));
-	color: var(--mn-italic, var(--mn-protection));
-}
-
+/* bold-italic styles */
 .cm-strong.cm-em, strong > em, em > strong {
   --bolditalic-color: var(--mn-bolditalic, var(--mn-victorious));
 	color: var(--mn-bolditalic, var(--mn-victorious));
 }
 
-del,
-.cm-strikethrough {
-	--strikethrough-color: var(--mn-strikethrough, var(--mn-longevity));
-	color: var(--mn-strikethrough, var(--mn-longevity));
-}
-
-.cm-strikethrough {
-	text-decoration: line-through;
-}
-
-/* heading styles */
-.inline-title {
-	--heading-color: var(--mn-peak);
-	color: var(--mn-peak);
-}
-
-h1,
-.cm-header.cm-header-1 {
-	--h1-color: var(--mn-h1, var(--mn-accent));
-	color: var(--mn-h1, var(--mn-accent));
-}
-
-h2,
-.cm-header.cm-header-2 {
-	--h2-color: var(--mn-h2, var(--mn-accent));
-	color: var(--mn-h2, var(--mn-accent));
-}
-
-h3,
-.cm-header.cm-header-3 {
-	--h3-color: var(--mn-h3, var(--mn-accent));
-	color: var(--mn-h3, var(--mn-accent));
-}
-
-h4,
-.cm-header.cm-header-4 {
-	--h4-color: var(--mn-h4, var(--mn-accent));
-	color: var(--mn-h4, var(--mn-accent));
-}
-
-h5,
-.cm-header.cm-header-5 {
-	--h5-color: var(--mn-h5, var(--mn-accent));
-	color: var(--mn-h5, var(--mn-accent));
-}
-
-h6,
-.cm-header.cm-header-6 {
-	--h6-color: var(--mn-h6, var(--mn-accent));
-	color: var(--mn-h6, var(--mn-accent));
+/* strikethrough styles */
+.cm-strikethrough, del {
+  --strikethrough-color: var(--mn-longevity);
+	color: var(--mn-longevity);
 }
 
 /* tooltip styles */
@@ -164,10 +106,27 @@ h6,
 }
 
 body {
+  /* navigation styles */
+  --nav-item-color: var(--mn-text);
+  --nav-item-color-hover: var(--mn-accent, var(--mn-mountain));
+  --nav-item-color-active: var(--mn-accent, var(--mn-peak));
+  /* inline title style */
+  --inline-title-color: var(--mn-mountain);
+  /* heading styles */
+  --h1-color: var(--mn-h1, var(--mn-peak));
+  --h2-color: var(--mn-h2, var(--mn-peak));
+  --h3-color: var(--mn-h3, var(--mn-peak));
+  --h4-color: var(--mn-h4, var(--mn-peak));
+  --h5-color: var(--mn-h5, var(--mn-peak));
+  --h6-color: var(--mn-h6, var(--mn-peak));
   /* bold, italic, strikethrough styles */
   --bold-color: var(--mn-bold, var(--mn-wisdom));
   --italic-color: var(--mn-italic, var(--mn-protection));
   --strikethrough-color: var(--mn-strikethrough, var(--mn-longevity));
+  /* button styles */
+  --button-background: var(--mn-peak);
+  --button-background-hover: rgb(var(--mn-mountain));
+  --button-color: var(--mn-text);
 	/*list styles */
 	--list-indent: calc(var(--indent-unit) * var(--indent-size));
 	--list-indent-editing: calc(var(--indent-unit) * var(--indent-size));
@@ -194,16 +153,16 @@ body {
 	--link-unresolved-color: var(--mn-teal);
 	--link-external-color: var(--mn-wisdom);
 	/* tag styles */
-  --tag-size: var(--font-smaller);
-  --tag-color: var(--text-accent);
-  --tag-color-hover: var(--text-accent);
+  --tag-size: var(--font-medium);
+  --tag-color: var(--mn-accent, var(--mn-peak));
+  --tag-color-hover: var(--mn-accent, var(--mn-peak));
 	--tag-decoration: none;
   --tag-decoration-hover: none;
-  --tag-background: rgb(var(--mn-accent), 10%);
-  --tag-background-hover: rgb(var(--mn-accent), 20%);
+  --tag-background: rgb(var(--mn-accent, var(--mn-mountain)), 10%);
+  --tag-background-hover: rgb(var(--mn-accent, var(--mn-mountain)), 20%);
   --tag-border-color: transparent;
-  --tag-border-color-hover: var(--mn-accent);
-  --tag-border-width: 0px;
+  --tag-border-color-hover: var(--mn-accent, var(--mn-mountain));
+  --tag-border-width: 1px;
   --tag-padding-x: 7px;
   --tag-padding-y: 3px;
   --tag-radius: 13px;
@@ -218,19 +177,15 @@ body {
   margin-block-end: 2em;
   border: none;
   height: 3px;
-  background-image: linear-gradient(to right, var(--background-primary), var(--mn-accent) , var(--background-primary));
+  background-image: linear-gradient(to right, var(--background-primary), var(--mn-accent, var(--mn-peak)) , var(--background-primary));
   position: relative;
   overflow: visible;
 }
 
 .markdown-source-view hr::before, 
 .markdown-preview-view hr::before {
-	/* TODO: add SVG icon instead of kaomoji
-  mask-image: var(--mnicon);
-	mask-size: 69%;
-	*/
 	content: "   ฅ(ᵔ꒳ ᵔマ.ᐟ   " ;
-  color: var(--mn-accent);
+  color: var(--mn-accent, var(--mn-peak));
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -238,4 +193,33 @@ body {
   transform: translate(-50%, 50%);
   padding: none;
   background-color: var(--background-primary);
+}
+
+/* settings styles */
+.setting-item-control button {
+  background-color: var(--interactive-normal);
+  color: var(--button-color);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--interactive-hover);
+  }
+}
+
+button.mod-destructive {
+  color: var(--text-error);
+}
+
+.vertical-tab-nav-item {
+  &.is-active {
+    color: var(--mn-accent, var(--mn-peak));
+  }
+}
+
+/* hashtag styles */
+.cm-hashtag {
+  background-color: rgb(var(--mn-accent, var(--mn-mountain)), 10%);
+  &:hover {
+      background-color: rgb(var(--mn-accent, var(--mn-mountain)), 20%);
+  }
 }

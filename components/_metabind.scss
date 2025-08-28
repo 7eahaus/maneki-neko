@@ -1,0 +1,12 @@
+/* METABIND STYLES */
+.mb-button, .mb-button-inline, .mb-button-inner {
+  background-color: var(--mn-accent, var(--mn-peak)) !important;
+  color: var(--mn-text) !important;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--mn-red) !important;
+  }
+}

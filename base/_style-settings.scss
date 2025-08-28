@@ -9,11 +9,8 @@ settings:
 		description: select your preferred cat collar.
 		type: class-select
 		allowEmpty: false
-		default: full-palette
+		default: mn-protection
 		options:
-		-
-			label: full palette
-			value: mn-full-palette
 		-
 			label: protection
 			value: mn-protection
@@ -65,7 +62,7 @@ settings:
 		description: choose a color for the file name
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-mountain)
+		default: safety
 		options:
 			-
 				label: protection
@@ -118,7 +115,7 @@ settings:
 		description: choose the color for h1 headings
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-peak)
+		default: protection
 		options:
 			-
 				label: protection
@@ -171,7 +168,7 @@ settings:
 		description: choose the color for h2 headings
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-peak)
+		default: protection
 		options:
 			-
 				label: protection
@@ -224,7 +221,7 @@ settings:
 		description: choose the color for h3 headings
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-peak)
+		default: protection
 		options:
 			-
 				label: protection
@@ -277,7 +274,7 @@ settings:
 		description: choose the color for h4 headings
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-peak)
+		default: protection
 		options:
 			-
 				label: protection
@@ -330,7 +327,7 @@ settings:
 		description: choose the color for h5 headings
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-peak)
+		default: protection
 		options:
 			-
 				label: protection
@@ -383,7 +380,7 @@ settings:
 		description: choose the color for h6 headings
 		type: variable-select
 		allowEmpty: false
-		default: var(--mn-peak)
+		default: protection
 		options:
 			-
 				label: protection
@@ -487,6 +484,7 @@ settings:
 		id: mn-italic
 		title: italic font color
 		description: choose a color for italic text
+		type: variable-select
 		allowEmpty: false
 		default: protection
 		options:
@@ -541,7 +539,7 @@ settings:
 		description: choose a color for bold italic text
 		type: variable-select
 		allowEmpty: false
-		default: friendship
+		default: victorious
 		options:
 			-
 				label: protection

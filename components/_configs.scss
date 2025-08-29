@@ -14,7 +14,7 @@
   --background-modifier-success: rgb(var(--mn-safety), 90%);
   --background-modifier-success-rgb: var(--mn-safety-rgb);
   --background-modifier-error: rgb(var(--mn-red), 90%);
-  --background-modifier-error-rgb: var(--mn-red-rgb);
+  --background-modifier-error-rgb: rgb(var(--mn-red), 90%);
   --background-modifier-error-hover: rgb(var(--mn-red), 100%);
   --background-modifier-cover: rgb(var(--mn-crust), 90%);
   --color-accent: var(--mn-accent);
@@ -29,11 +29,11 @@
   --text-faint: var(--mn-surface1);
   --text-error: var(--mn-red);
   --text-error-hover: rgb(var(--mn-red), 80%);
-  --text-highlight-bg: rgb(var(--mn-accent), 100%);
-  --text-highlight-bg-active: rgb(var(--mn-accent), 100%);
+  --text-highlight-bg: var(--mn-accent, var(--mn-peak));
+  --text-highlight-bg-active: var(--mn-accent, var(--mn-peak));
   --text-selection: rgb(var(--mn-accent, var(--mn-peak)), 33%);
-  --text-on-accent: var(--mn-mantle);
-  --text-on-accent-inverted: var(--mn-mantle);
+  --text-on-accent: var(--mn-text);
+  --text-on-accent-inverted: var(--mn-text);
   --interactive-normal: var(--mn-surface0);
   --interactive-hover: var(--mn-surface1);
   --interactive-accent: var(--mn-accent, var(--mn-peak));
@@ -103,6 +103,13 @@ body {
 	background-color: var(--background-secondary);
 	box-shadow: 0 0 3px var(--mn-mantle);
 	color: var(--mn-peak);
+}
+
+/* scrollbar styles */
+.scrollbar {
+  --scrollbar-bg: var(--mn-overlay0);
+  --scrollbar-thumb-bg: var(--mn-accent);
+  --scrollbar-thumb-bg-hover: var(--mn-accent, var(--mn-peak));
 }
 
 body {
@@ -245,10 +252,17 @@ button.mod-destructive {
 
 /* text selection styles */
 ::selection {
-  background-color: var(--mn-accent, var(--mn-peak));
+  background-color: rgb(var(--mn-accent, var(--mn-peak)), 33%);
 }
 
 /* status bar styles */
 .status-bar {
 	background-color: var(--mn-mantle);
 }
+
+/* side bar styles */
+.clickable-icon.side-dock-ribbon-action {
+  color: var(--mn-accent, var(--mn-mountain));
+}
+
+/* scrollbar styles */

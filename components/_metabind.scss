@@ -10,3 +10,34 @@
     background-color: var(--mn-red) !important;
   }
 }
+
+.mb-suggest-input, .mb-button-inner.mod-plain {
+  background-color: transparent !important;
+  color: var(--mn-text) !important;
+}
+
+.mb-input-wrapper > input {
+  background-color: var(--mn-surface0);
+  border: 1px solid var(--mn-overlay0);
+  border-radius: 7px;
+  padding: 4px 8px;
+  cursor: text;
+
+  &:focus, &:focus-visible, &:active, &:hover {
+    border: 1px solid var(--mn-accent, var(--mn-peak));
+    background-color: var(--mn-surface0);
+  }
+}
+
+.mb-list-input > input {
+  background-color: var(--mn-surface0);
+  border: 1px solid var(--mn-overlay0);
+  border-radius: 7px;
+  padding: 4px 8px;
+  cursor: text;
+
+  &:focus, &:focus-visible, &:active, &:hover {
+    border: 1px solid var(--mn-accent, var(--mn-peak));
+    background-color: var(--mn-surface0);
+  }
+}

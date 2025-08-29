@@ -31,14 +31,14 @@
   --text-error-hover: rgb(var(--mn-red), 80%);
   --text-highlight-bg: rgb(var(--mn-accent), 100%);
   --text-highlight-bg-active: rgb(var(--mn-accent), 100%);
-  --text-selection: rgb(var(--mn-accent, var(--mn-peak)), 30%);
+  --text-selection: rgb(var(--mn-accent, var(--mn-peak)), 33%);
   --text-on-accent: var(--mn-mantle);
   --text-on-accent-inverted: var(--mn-mantle);
   --interactive-normal: var(--mn-surface0);
   --interactive-hover: var(--mn-surface1);
-  --interactive-accent: var(--mn-accent);
-  --interactive-accent-rgb: var(--mn-accent);
-  --interactive-accent-hover: var(--mn-accent);
+  --interactive-accent: var(--mn-accent, var(--mn-peak));
+  --interactive-accent-rgb: var(--mn-accent, var(--mn-peak));
+  --interactive-accent-hover: rgb(var(--mn-accent, var(--mn-peak)), 80%);
   --interactive-success: var(--mn-safety);
   --scrollbar-active-thumb-bg: rgb(var(--mn-text), 20%);
   --scrollbar-bg: rgb(var(--mn-text), 5%);
@@ -222,4 +222,33 @@ button.mod-destructive {
   &:hover {
       background-color: rgb(var(--mn-accent, var(--mn-mountain)), 20%);
   }
+}
+
+/* empty state styles */
+.empty-state-action {
+  color: var(--mn-text);
+  background: var(--mn-mantle);
+  border: 2px solid var(--mn-surface0);
+  border-radius: 13px;
+  margin: 3px 7px;
+  padding: 7px 13px;
+}
+
+.empty-state-action:hover {
+  color: var(--mn-subtext);
+  background: var(--mn-surface2);
+}
+
+.empty-state-action.tappable.mod-close {
+  color: var(--text-error);
+}
+
+/* text selection styles */
+::selection {
+  background-color: var(--mn-accent, var(--mn-peak));
+}
+
+/* status bar styles */
+.status-bar {
+	background-color: var(--mn-mantle);
 }

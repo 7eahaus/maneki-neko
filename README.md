@@ -11,6 +11,11 @@ Any questions or issues should be directed towards the GitHub page (https://gith
 Special thanks to all the members of the Obsidian community who have provided feedback and helped me build and test this theme.
 
 # Major Theme Changes
+- 2025-08-30
+  - fixed highlight color not showing up
+  - fixed issue where accent colors were not being defined properly
+  - other minor UI changes that arose when fixing other bugs
+  - fixed font on mobile
 - 2025-08-29
   - fixed MetaBind text input field background color
 - 2025-08-28

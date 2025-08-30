@@ -6,13 +6,7 @@
   transition: var(--transition-hover-bg), var(--transition-hover-color);
 
   &:hover {
-    --background-modifier-hover: rgb(var(--mn-accent));
-
-    color: var(--text-accent);
-  }
-
-  &:hover svg {
-    color: var(--text-accent);
+    --background-modifier-hover: rgb(var(--mn-accent-rgb));
   }
 }
 
@@ -31,6 +25,6 @@
 
 .mod-linux .titlebar-button.mod-close:hover,
 .mod-windows .titlebar-button.mod-close:hover {
-  background-color: rgb(var(--mn-red));
+  background-color: var(--mn-red);
   color: var(--mn-mountain);
 }

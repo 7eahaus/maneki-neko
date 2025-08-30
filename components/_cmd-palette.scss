@@ -21,8 +21,8 @@
 }
 
 .suggestion-item.is-selected {
-  background-color: rgb(var(--mn-accent));
-  color: var(--mn-accent);
+  background-color: rgb(var(--mn-accent-rgb));
+  color: var(--text-on-accent);
 
   & .suggestion-flair {
     color: var(--mn-accent);

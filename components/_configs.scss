@@ -1,7 +1,9 @@
 /* ACTUAL CONFIGS */
 /* setting colors */
 .theme-dark,
-.theme-light {
+.theme-light,
+.is-mobile.theme-dark,
+.is-mobile.theme-light {
   --background-primary: var(--mn-base);
   --background-primary-rgb: var(--mn-base-rgb);
   --background-primary-alt: var(--mn-crust);
@@ -20,7 +22,7 @@
   --color-accent: var(--mn-accent);
   --color-accent-rgb: var(--mn-accent);
   --color-accent-1: var(--mn-accent);
-  --color-accent-2: rgb(var(--mn-accent), 90%);
+  --color-accent-2: rgb(var(--mn-accent-rgb), 90%);
   --text-accent: var(--mn-accent);
   --text-accent-hover: var(--mn-accent);
   --text-normal: var(--mn-text);
@@ -28,23 +30,20 @@
   --text-muted-rgb: var(--mn-subtext-rgb);
   --text-faint: var(--mn-surface1);
   --text-error: var(--mn-red);
-  --text-error-hover: rgb(var(--mn-red), 80%);
+  --text-error-hover: rgb(var(--mn-red-r), 80%);
   --text-highlight-bg: var(--mn-accent, var(--mn-peak));
   --text-highlight-bg-active: var(--mn-accent, var(--mn-peak));
-  --text-selection: rgb(var(--mn-accent, var(--mn-peak)), 33%);
   --text-on-accent: var(--mn-text);
   --text-on-accent-inverted: var(--mn-text);
   --interactive-normal: var(--mn-surface0);
   --interactive-hover: var(--mn-surface1);
   --interactive-accent: var(--mn-accent, var(--mn-peak));
   --interactive-accent-rgb: var(--mn-accent, var(--mn-peak));
-  --interactive-accent-hover: rgb(var(--mn-accent, var(--mn-peak)), 80%);
+  --interactive-accent-hover: rgb(var(--mn-accent-rgb, var(--mn-peak)), 80%);
   --interactive-success: var(--mn-safety);
-  --scrollbar-active-thumb-bg: rgb(var(--mn-text), 20%);
-  --scrollbar-bg: rgb(var(--mn-text), 5%);
-  --scrollbar-thumb-bg: rgb(var(--mn-text), 10%);
-  --mono-rgb-0: var(--mn-crust);
-  --mono-rgb-100: var(--mn-text);
+  --scrollbar-active-thumb-bg: rgb(var(--mn-text-rgb), 20%);
+  --scrollbar-bg: rgb(var(--mn-text-rgb), 5%);
+  --scrollbar-thumb-bg: rgb(var(--mn-text-rgb), 10%);
 	/*color bases*/
   --color-base-00: var(--mn-crust);
   --color-base-10: var(--mn-mantle);
@@ -57,6 +56,9 @@
   --color-base-60: var(--mn-overlay2);
   --color-base-70: var(--mn-subtext);
   --color-base-100: var(--mn-text);
+  /* tag styles */
+  --tag-background: rgb(var(--mn-accent-rgb, var(--mn-mountain-rgb)), 33%);
+  --tag-background-hover: rgba(var(--mn-accent-rgb), var(--mn-mountain-rgb), 20%);
 }
 
 /* color scheme lighten and darken */
@@ -105,13 +107,6 @@ body {
 	color: var(--mn-peak);
 }
 
-/* scrollbar styles */
-.scrollbar {
-  --scrollbar-bg: var(--mn-overlay0);
-  --scrollbar-thumb-bg: var(--mn-accent);
-  --scrollbar-thumb-bg-hover: var(--mn-accent, var(--mn-peak));
-}
-
 body {
   /* navigation styles */
   --nav-item-color: var(--mn-text);
@@ -150,7 +145,7 @@ body {
 	--list-bullet-end-padding: 1.3em;
 	/* blockquote styles */
 	--blockquote-border-thickness: 2px;
-	--blockquote-border-color: var(--mn-accent, var(--mn-friendship));
+	--blockquote-border-color: var(--mn-friendship);
 	--blockquote-font-style: normal;
 	--blockquote-color: inherit;
 	--blockquote-background-color: transparent;
@@ -159,21 +154,9 @@ body {
 	--link-color-hover: var(--mn-friendship);
 	--link-unresolved-color: var(--mn-teal);
 	--link-external-color: var(--mn-wisdom);
-	/* tag styles */
-  --tag-size: var(--font-medium);
-  --tag-color: var(--mn-accent, var(--mn-peak));
-  --tag-color-hover: var(--mn-accent, var(--mn-peak));
-	--tag-decoration: none;
-  --tag-decoration-hover: none;
-  --tag-background: rgb(var(--mn-accent, var(--mn-mountain)), 10%);
-  --tag-background-hover: rgb(var(--mn-accent, var(--mn-mountain)), 20%);
-  --tag-border-color: transparent;
-  --tag-border-color-hover: var(--mn-accent, var(--mn-mountain));
-  --tag-border-width: 1px;
-  --tag-padding-x: 7px;
-  --tag-padding-y: 3px;
-  --tag-radius: 13px;
-  --tag-weight: inherit;
+  /* icon styles */
+  --icon-color: var(--mn-text);
+  --icon-color-hover: var(--mn-text-subtext);
 }
 
 /* horizontal rule styles */
@@ -223,14 +206,6 @@ button.mod-destructive {
   }
 }
 
-/* hashtag styles */
-.cm-hashtag {
-  background-color: rgb(var(--mn-accent, var(--mn-mountain)), 10%);
-  &:hover {
-      background-color: rgb(var(--mn-accent, var(--mn-mountain)), 20%);
-  }
-}
-
 /* empty state styles */
 .empty-state-action {
   color: var(--mn-text);
@@ -252,7 +227,7 @@ button.mod-destructive {
 
 /* text selection styles */
 ::selection {
-  background-color: rgb(var(--mn-accent, var(--mn-peak)), 33%);
+  --text-selection: rgba(var(--mn-accent-rgb, var(--mn-peak)), 33%);
 }
 
 /* status bar styles */
@@ -265,4 +240,3 @@ button.mod-destructive {
   color: var(--mn-accent, var(--mn-mountain));
 }
 
-/* scrollbar styles */

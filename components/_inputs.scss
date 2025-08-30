@@ -1,7 +1,7 @@
 /* INPUT STYLES */
 select:focus,
 .dropdown:focus {
-  box-shadow: 0 0 0 2px rgb(var(--mn-accent), 69%);
+  box-shadow: 0 0 0 2px rgb(var(--mn-accent-rgb), 69%);
 }
 
 .dropdown {
@@ -26,7 +26,7 @@ input[type="search"]:focus-visible,
 input[type="email"]:focus-visible,
 input[type="password"]:focus-visible,
 input[type="number"]:focus-visible {
-  box-shadow: 0 0 0 2px rgb(var(--mn-accent, var(--mn-peak)), 70%);
+  box-shadow: 0 0 0 2px rgb(var(--mn-accent-rgb), var(--mn-peak), 70%);
 }
 
 .checkbox-container {

@@ -108,62 +108,67 @@
 
 /* Selecting Accents */
 
+body {
+	--mn-accent: rgb(var(--mn-accent-rgb));
+}
+
+body,
 .mn-accent-protection {
-	--mn-accent: var(--mn-protection);
+	--mn-accent-rgb: var(--mn-protection-rgb);
 }
 
 .mn-accent-prosperity {
-	--mn-accent: var(--mn-prosperity);
+	--mn-accent-rgb: var(--mn-prosperity-rgb);
 }
 
 .mn-accent-success {
-	--mn-accent: var(--mn-success);
+	--mn-accent-rgb: var(--mn-success-rgb);
 }
 
 .mn-accent-safety {
-	--mn-accent: var(--mn-safety);
+	--mn-accent-rgb: var(--mn-safety-rgb);
 }
 
 .mn-accent-friendship {
-	--mn-accent: var(--mn-friendship);
+	--mn-accent-rgb: var(--mn-friendship-rgb);
 }
 
 .mn-accent-wisdom {
-	--mn-accent: var(--mn-wisdom);
+	--mn-accent-rgb: var(--mn-wisdom-rgb);
 }
 
 .mn-accent-victorious {
-	--mn-accent: var(--mn-victorious);
+	--mn-accent-rgb: var(--mn-victorious-rgb);
 }
 
 .mn-accent-longevity {
-	--mn-accent: var(--mn-longevity);
+	--mn-accent-rgb: var(--mn-longevity-rgb);
 }
 
 .mn-accent-love {
-	--mn-accent: var(--mn-love);
+	--mn-accent-rgb: var(--mn-love-rgb);
 }
 
 .mn-accent-red {
-	--mn-accent: var(--mn-red);
+	--mn-accent-rgb: var(--mn-red-rgb);
 }
 
 .mn-accent-goldenrod {
-	--mn-accent: var(--mn-goldenrod);
+	--mn-accent-rgb: var(--mn-goldenrod-rgb);
 }
 
 .mn-accent-teal {
-	--mn-accent: var(--mn-teal);
+	--mn-accent-rgb: var(--mn-teal-rgb);
 }
 
 .mn-accent-sky {
-	--mn-accent: var(--mn-sky);
+	--mn-accent-rgb: var(--mn-sky-rgb);
 }
 
 .mn-accent-lavender {
-	--mn-accent: var(--mn-lavender);
+	--mn-accent-rgb: var(--mn-lavender-rgb);
 }
 
 .mn-accent-rose {
-	--mn-accent: var(--mn-rose);
+	--mn-accent-rgb: var(--mn-rose-rgb);
 }

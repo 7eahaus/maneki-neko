@@ -12,7 +12,6 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   /* Blockquotes */
   --blockquote-border-thickness: 2px;
-  --blockquote-border-color: var(--mn-accent);
   --blockquote-font-style: normal;
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;
@@ -231,8 +230,8 @@ body {
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
   /* Indentation guide */
-  --indentation-guide-color: rgba(var(--mn-surface1));
-  --indentation-guide-color-active: rgb(var(--mn-accent), 70%);
+  --indentation-guide-color: rgba(var(--mn-surface1-rgb), 50%);
+  --indentation-guide-color-active: rgb(var(--mn-accent-rgb), 70%);
   --indentation-guide-width: 3px;
   /* Inline title */
   --inline-title-color: var(--h1-color);
@@ -284,7 +283,7 @@ body {
   /* Lists */
   --list-indent: 2.5rem;
   --list-spacing: 0.5rem;
-  --list-marker-color: rgb(var(--mn-accent));
+  --list-marker-color: rgb(var(--mn-accent-rgb));
   --list-marker-color-hover: var(--text-muted);
   --list-marker-color-collapsed: var(--text-accent);
   --list-bullet-border: none;
@@ -364,10 +363,6 @@ body {
   --ribbon-padding:
     var(--size-4-2) var(--size-4-1)
     var(--size-4-3);
-  /* Scrollbars */
-  --scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100), 20%);
-  --scrollbar-bg: rgb(var(--mono-rgb-100), 5%);
-  --scrollbar-thumb-bg: rgb(var(--mono-rgb-100), 10%);
   /* Search */
   --search-clear-button-color: var(--text-muted);
   --search-clear-button-size: 13px;
@@ -477,12 +472,10 @@ body {
   --table-row-last-border-width: var(--table-border-width);
   /* Tags */
   --tag-size: max(var(--font-ui-medium), var(--font-small));
-  --tag-color: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
-  --tag-color-hover: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-color: rgba(var(--mn-accent-rgb), var(--mn-peak-rgb), 50%);
+  --tag-color-hover: rgba(var(--mn-accent-rgb), var(--mn-peak-rgb), 100%);
   --tag-decoration: none;
   --tag-decoration-hover: underline;
-  --tag-background: transparent;
-  --tag-background-hover: 0;
   --tag-border-color: hsl(var(--interactive-accent-hsl), 10%);
   --tag-border-color-hover:
     hsl(
@@ -490,8 +483,8 @@ body {
       15%
     );
   --tag-border-width: 0;
-  --tag-padding-x: 0;
-  --tag-padding-y: 0;
+  --tag-padding-x: 5px;
+  --tag-padding-y: 3px;
   --tag-radius: 0.8em;
   /* Window frame */
   --titlebar-background: var(--background-secondary);
@@ -549,7 +542,6 @@ body {
   --text-on-accent: var(--text-normal);
   --text-error: var(--color-red);
   --text-success: var(--color-green);
-  --text-selection: rgb(var(--color-accent-rgb), 3%);
   --text-accent: var(--color-accent);
   --text-accent-hover: var(--color-accent-2);
   --interactive-normal: var(--color-base-00);

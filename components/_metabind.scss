@@ -41,3 +41,20 @@
     background-color: var(--mn-surface0);
   }
 }
+
+.mb-input-textarea {
+  background-color: var(--mn-surface0);
+  border: 1px solid var(--mn-overlay0);
+  border-radius: 7px;
+  padding: 4px 8px;
+  cursor: text;
+
+  &:focus, &:focus-visible, &:active, &:hover {
+    border: 1px solid var(--mn-accent, var(--mn-peak));
+    background-color: var(--mn-surface0);
+  }
+}
+
+.mb-inline-list-item {
+  background-color: var(--mn-surface0);
+}

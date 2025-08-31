@@ -1931,6 +1931,22 @@ input[type=number]:focus-visible {
   background-color: var(--mn-surface0);
 }
 
+.mb-input-textarea {
+  background-color: var(--mn-surface0);
+  border: 1px solid var(--mn-overlay0);
+  border-radius: 7px;
+  padding: 4px 8px;
+  cursor: text;
+}
+.mb-input-textarea:focus, .mb-input-textarea:focus-visible, .mb-input-textarea:active, .mb-input-textarea:hover {
+  border: 1px solid var(--mn-accent, var(--mn-peak));
+  background-color: var(--mn-surface0);
+}
+
+.mb-inline-list-item {
+  background-color: var(--mn-surface0);
+}
+
 .tasknotes-plugin .cancel-button {
   background-color: var(--interactive-normal);
   color: var(--text-error);

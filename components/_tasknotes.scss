@@ -2,3 +2,8 @@
   background-color: var(--interactive-normal);
   color: var(--text-error);
 }
+
+.tasknotes-plugin .title-input {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+}

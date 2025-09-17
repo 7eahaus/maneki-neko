@@ -10,6 +10,7 @@
 	--mn-longevity: #673ab7;
 	--mn-love: #ec79ce;
 	--mn-red: #a7442f;
+	--mn-ginger: #ffa500;
 	--mn-goldenrod: #dfa91e;
 	--mn-teal: #00695f;
 	--mn-sky: #71baf6;
@@ -25,6 +26,7 @@
 	--mn-longevity-rgb: 103, 58, 183;
 	--mn-love-rgb: 236, 121, 206;
 	--mn-red-rgb: 167, 68, 47;
+	--mn-ginger-rgb: 255, 165, 0;
 	--mn-goldenrod-rgb: 223, 169, 30;
 	--mn-teal-rgb: 0, 105, 95;
 	--mn-sky-rgb: 113, 186, 246;
@@ -32,7 +34,7 @@
 	/* "Color" Variables */
 	--color-red: var(--mn-protection);
 	--color-orange: var(--mn-prosperity);
-	--color-yellow: var(--mn-goldenrod)
+	--color-yellow: var(--mn-success);
 	--color-green: var(--mn-safety);
 	--color-cyan: var(--mn-friendship);
 	--color-blue: var(--mn-wisdom);
@@ -151,6 +153,10 @@ body,
 
 .mn-accent-red {
 	--mn-accent-rgb: var(--mn-red-rgb);
+}
+
+.mn-accent-ginger {
+	--mn-accent-rgb: var(--mn-ginger-rgb);
 }
 
 .mn-accent-goldenrod {
